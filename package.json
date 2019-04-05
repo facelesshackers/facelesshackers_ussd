@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Real-time monitoring system app via USSD using AT, Pusher, and Vue",
   "main": "server.js",
+  "engines": {
+    "node": "10.15.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon server.js",
