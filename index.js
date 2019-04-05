@@ -4,8 +4,8 @@ new Vue({
     data:{
         title: "Health Reporting Dashboard",
         orders:[
-            {name:"Chris Nwamba", description:"Amoeba, Cholera", address:"Kakuma 1", telephone:"08082092000", open:true},
-            {name:"William Imoh", description:"Diahorrea, TB, Malaria", address:"Kakuma 2", telephone:"08082818700", open:true}
+            {name:"Eddie Kago", description:"Amoeba, Cholera", address:"Kakuma 1", telephone:"08082092000", open:true},
+            {name:"Baba Yao", description:"Diahorrea, TB, Malaria", address:"Kakuma 2", telephone:"08082818700", open:true}
         ]
     },
     created(){
