@@ -1,6 +1,6 @@
-# Foodigo
+# Faceless Hackers
 
-This is a realtime food ordering app using USSD. Realtime in that the user receives requests as soon as it is made to the server via USSD. 
+This is a realtime reporting app using USSD. Realtime in that the user receives requests as soon as it is made to the server via USSD. 
 
 [View tutorial](https://pusher.com/tutorials/ussd-food-app-vue-africas-talking)
 
