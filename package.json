@@ -15,7 +15,7 @@
     "realtime",
     "vue"
   ],
-  "author": "Chuloo",
+  "author": "faceless_hackers",
   "license": "MIT",
   "dependencies": {
     "africastalking": "^0.4.0",

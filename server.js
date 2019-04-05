@@ -10,26 +10,31 @@ var bodyParser = require('body-parser')
 var express = require('express')
 var app = express()
 var port = 3000
+var port = process.env.PORT
 var path = require('path')
+var serveStatic = require('serve-static');
 
 var pusher = new Pusher(credentials.pusher)
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
+app = express();
+app.use(serveStatic(__dirname + "/dist"));
+
 const https = require('https');
 
-https.get('https://clients.getcloudrack/techfugees', (res) => {
-  console.log('statusCode:', res.statusCode);
-  console.log('headers:', res.headers);
+// https.get('https://clients.getcloudrack/techfugees', (res) => {
+//   console.log('statusCode:', res.statusCode);
+//   console.log('headers:', res.headers);
 
-  res.on('data', (d) => {
-    process.stdout.write(d);
-  });
+//   res.on('data', (d) => {
+//     process.stdout.write(d);
+//   });
 
-}).on('error', (e) => {
-  console.error(e);
-});
+// }).on('error', (e) => {
+//   console.error(e);
+// });
 
 // Serve home page and static files
 app.get('/', function(req, res){
