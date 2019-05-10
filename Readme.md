@@ -11,7 +11,7 @@ Create an account on [pusher](pusher.com) and [Africa's Talking](africastalking.
 After account setup, create a file cred.js in the root directory. Fill in the credentials as seen in the cred_sample.js file. To create a local development server, run
 
 ```js
-npm run serve
+node serve.js
 ```
 
 ## Built With
