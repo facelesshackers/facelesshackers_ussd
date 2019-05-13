@@ -13,7 +13,7 @@ var app = express()
 // var port = 3000
 var port = process.env.PORT || 3000
 var path = require('path')
-var serveStatic = require('serve-static');
+// var serveStatic = require('serve-static');
 
 var pusher = new Pusher(credentials.pusher)
 app.use(cors())
