@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon server.js",
+    "postinstall": "npm run build",
     "build": "node server.js"
   },
   "keywords": [
@@ -24,9 +25,12 @@
     "africastalking": "^0.4.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.16.2",
     "pusher": "^2.2.0",
     "webtask": "^1.0.0",
     "webtask-tools": "^3.4.0"
+  },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "serve-static": "^1.14.1"
   }
 }

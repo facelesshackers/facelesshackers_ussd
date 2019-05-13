@@ -5,12 +5,13 @@ var africastalking = require('africastalking')(credentials.AT)
 var cors = require('cors')
 var bodyParser = require('body-parser')
 var Webtask = require('webtask-tools')
+const serveStatic = require("serve-static")
 
 //configure modules
 var express = require('express')
 var app = express()
 // var port = 3000
-var port = process.env.PORT
+var port = process.env.PORT || 3000
 var path = require('path')
 var serveStatic = require('serve-static');
 
@@ -20,21 +21,9 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
 app = express();
-app.use(serveStatic(__dirname + "/dist"));
+app.use(serveStatic(path.join(__dirname + "/dist")));
 
 const https = require('https');
-
-// https.get('https://clients.getcloudrack/techfugees/create', (res) => {
-//   console.log('statusCode:', res.statusCode);
-//   console.log('headers:', res.headers);
-
-//   res.on('data', (d) => {
-//     process.stdout.write(d);
-//   });
-
-// }).on('error', (e) => {
-//   console.error(e);
-// });
 
 // Serve home page and static files
 app.get('/', function(req, res){
