@@ -25,7 +25,7 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "pusher": "^1.5.1",
+    "pusher": "^2.2.0",
     "webtask": "^1.0.0",
     "webtask-tools": "^3.4.0"
   }
