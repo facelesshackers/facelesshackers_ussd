@@ -24,17 +24,17 @@ app.use(serveStatic(__dirname + "/dist"));
 
 const https = require('https');
 
-https.get('https://clients.getcloudrack/techfugees/create', (res) => {
-  console.log('statusCode:', res.statusCode);
-  console.log('headers:', res.headers);
+// https.get('https://clients.getcloudrack/techfugees/create', (res) => {
+//   console.log('statusCode:', res.statusCode);
+//   console.log('headers:', res.headers);
 
-  res.on('data', (d) => {
-    process.stdout.write(d);
-  });
+//   res.on('data', (d) => {
+//     process.stdout.write(d);
+//   });
 
-}).on('error', (e) => {
-  console.error(e);
-});
+// }).on('error', (e) => {
+//   console.error(e);
+// });
 
 // Serve home page and static files
 app.get('/', function(req, res){
