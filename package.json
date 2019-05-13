@@ -12,7 +12,7 @@
     "build": "node server.js"
   },
   "keywords": [
-    "food",
+    "Reporting",
     "pusher",
     "app",
     "realtime",
