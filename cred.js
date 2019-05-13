@@ -1,6 +1,6 @@
 module.exports = {
     AT:{
-        apiKey: "ff20182072a067e304330e0079ff4102df0dee3b6d56d6f53538a46a9aee6cdb",
+        apiKey: "2dd770dedbaa23588bf42743255b3891ba1e30d147b40167dace9505e1f3121b",
         username: "cliffgor",
         format: 'json'
     },
@@ -11,4 +11,4 @@ module.exports = {
        cluster: "mt1",
        encrypted: true
     }
-}
+}   
