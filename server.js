@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
 app = express();
-app.use(serveStatic(path.join(__dirname + "/dist")));
+app.use(serveStatic(__dirname + "/dist"));
 
 const https = require('https');
 
