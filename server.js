@@ -4,23 +4,23 @@ var credentials = require('./cred')
 var africastalking = require('africastalking')(credentials.AT)
 var cors = require('cors')
 var bodyParser = require('body-parser')
-// var Webtask = require('webtask-tools')
+var Webtask = require('webtask-tools')
 
 //configure modules
 var express = require('express')
 var app = express()
 var port = 3000
-// var port = process.env.PORT
+var port = process.env.PORT || 3000
 var path = require('path')
-// var serveStatic = require('serve-static');
+var serveStatic = require('serve-static');
 
 var pusher = new Pusher(credentials.pusher)
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
-// app = express();
-// app.use(serveStatic(__dirname + "/dist"));
+app = express();
+app.use(serveStatic(__dirname + "/dist"));
 
 const https = require('https');
 
