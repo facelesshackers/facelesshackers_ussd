@@ -2,7 +2,6 @@
 
 This is a realtime reporting app using USSD. Realtime in that the user receives requests as soon as it is made to the server via USSD. 
 
-[View tutorial](https://pusher.com/tutorials/ussd-food-app-vue-africas-talking)
 
 ## Getting Started
 
@@ -19,3 +18,9 @@ node serve.js
 Africa's Talking, Pusher and Vue are used to build this app.
 
 ## Acknowledgments
+Thanks To:
+ - Timothy Wambua
+ - Sacky
+ - Allan Clinton
+ - Cliff Gor
+ 
