@@ -10,7 +10,7 @@ const serveStatic = require("serve-static")
 //configure modules
 var express = require('express')
 var app = express()
-// var port = 3000
+var port = 3000
 var port = process.env.PORT || 3000
 var path = require('path')
 // var serveStatic = require('serve-static');
@@ -101,5 +101,5 @@ app.post('/order', function(req, res){
 //listen on port 
 app.listen(port, function(err, res){
     if(err) throw err
-    console.log("Booming on the legendary port " + PORT)
+    console.log("Booming on the legendary port " + port)
 })
